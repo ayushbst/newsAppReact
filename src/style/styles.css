@@ -18,3 +18,10 @@ header {
 header input {
     text-align: center;
 }
+
+.item1 {
+    background-color: firebrick;
+    font-family: cursive;
+    font-size: larger;
+    text-align: center;
+}
