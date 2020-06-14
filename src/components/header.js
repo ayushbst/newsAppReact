@@ -5,7 +5,8 @@ class Header extends React.Component{
 
     
     state = {
-        input:''
+        input:'',
+        count:0
     }
     getInput(event)
     {
@@ -18,6 +19,12 @@ class Header extends React.Component{
         console.log(this.state.input);
     }
 
+    addCount(event)
+    {
+        this.setState({
+            count:this.state.count+1
+        })
+    }
     render(){
        return( <header>
            <div className="logo">Name:</div>
@@ -25,6 +32,10 @@ class Header extends React.Component{
            <button
            onClick = {(event) => this.inputEvent(event)}> OK </button>         
            <div> {this.state.input}</div>
+           <div> Count : {this.state.count}</div>
+           <div>
+               <button onClick = {() => this.addCount()}>Increase</button>
+           </div>
        </header>
        )
     }

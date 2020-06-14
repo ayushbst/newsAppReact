@@ -6,7 +6,7 @@ const NewsLists = () =>
 {
     return(
         <div className="item1">
-            Gussa utra ki ni?
+            This is a default web page created.
             <NewsListItems/>
         </div>
     )
